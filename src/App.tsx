@@ -18,7 +18,7 @@ const App = () => (
       <CartProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename="/carpe-diem-showcase/">
           <Header />
           <CartDrawer />
           <Routes>
