@@ -15,7 +15,8 @@ export default {
     extend: {
       fontFamily: {
         display: ["Playfair Display", "Georgia", "serif"],
-        body: ["DM Sans", "system-ui", "sans-serif"],
+        body: ["Poppins", "system-ui", "sans-serif"],
+        scripture: ["Cormorant Garamond", "Georgia", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",
