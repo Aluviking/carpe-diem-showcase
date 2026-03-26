@@ -132,28 +132,28 @@ const ProductCard = ({ product, onSelect, index }: ProductCardProps) => {
       </div>
 
       {/* ── Product info ──────────────────────────────────────── */}
-      <div className="pt-3 pb-1 space-y-1" onClick={() => onSelect(product)} style={{ cursor: 'pointer' }}>
+      <div className="pt-3 pb-1 space-y-1.5" onClick={() => onSelect(product)} style={{ cursor: 'pointer' }}>
         <p
           className="font-body uppercase tracking-widest"
-          style={{ fontSize: '0.58rem', color: 'hsl(0 0% 56%)' }}
+          style={{ fontSize: '0.56rem', color: 'hsl(0 0% 56%)' }}
         >
           {product.category}
         </p>
 
         <h3
-          className="font-display font-medium leading-snug"
-          style={{ fontSize: 'clamp(1.05rem, 2.4vw, 1.22rem)', color: NAVY }}
+          className="font-display font-medium leading-snug line-clamp-2"
+          style={{ fontSize: 'clamp(0.92rem, 3.5vw, 1.18rem)', color: NAVY }}
         >
           {product.name}
         </h3>
 
         {/* Rating */}
-        <div className="flex items-center gap-1.5">
+        <div className="flex items-center gap-1">
           <div className="flex items-center gap-0.5">
             {[1,2,3,4,5].map(s => (
               <Star
                 key={s}
-                className="h-[10px] w-[10px]"
+                className="h-[9px] w-[9px]"
                 style={{
                   fill: s <= Math.round(product.rating) ? '#f59e0b' : '#e5e7eb',
                   color: s <= Math.round(product.rating) ? '#f59e0b' : '#e5e7eb',
@@ -161,20 +161,21 @@ const ProductCard = ({ product, onSelect, index }: ProductCardProps) => {
               />
             ))}
           </div>
-          <span className="font-body" style={{ fontSize: '0.68rem', color: 'hsl(0 0% 52%)' }}>
-            {product.rating.toFixed(1)} ({product.reviewCount})
+          <span className="font-body" style={{ fontSize: '0.64rem', color: 'hsl(0 0% 52%)' }}>
+            {product.rating.toFixed(1)}
+            <span className="hidden sm:inline"> ({product.reviewCount})</span>
           </span>
         </div>
 
         {/* Price row */}
-        <div className="flex items-baseline gap-2 flex-wrap">
-          <p className="font-body font-bold" style={{ fontSize: '0.92rem', color: NAVY }}>
+        <div className="flex items-baseline gap-1.5 flex-wrap">
+          <p className="font-body font-bold" style={{ fontSize: 'clamp(0.82rem, 2.8vw, 0.95rem)', color: NAVY }}>
             {formatPrice(product.price)}
           </p>
           {product.originalPrice && (
             <p
-              className="font-body"
-              style={{ fontSize: '0.76rem', color: 'hsl(0 0% 58%)', textDecoration: 'line-through' }}
+              className="font-body hidden sm:block"
+              style={{ fontSize: '0.72rem', color: 'hsl(0 0% 58%)', textDecoration: 'line-through' }}
             >
               {formatPrice(product.originalPrice)}
             </p>
@@ -188,11 +189,11 @@ const ProductCard = ({ product, onSelect, index }: ProductCardProps) => {
               key={color.name}
               title={color.name}
               className="rounded-full border border-stone-200 flex-shrink-0"
-              style={{ width: '13px', height: '13px', background: color.hex, boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.08)' }}
+              style={{ width: '11px', height: '11px', background: color.hex, boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.08)' }}
             />
           ))}
           {product.colors.length > 4 && (
-            <span className="font-body" style={{ fontSize: '0.62rem', color: 'hsl(0 0% 56%)' }}>
+            <span className="font-body" style={{ fontSize: '0.6rem', color: 'hsl(0 0% 56%)' }}>
               +{product.colors.length - 4}
             </span>
           )}

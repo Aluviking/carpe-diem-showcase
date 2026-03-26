@@ -146,8 +146,8 @@
   font-family: var(--font-body);
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.65rem;
+  letter-spacing: 0.13em;
+  font-size: 0.72rem;
   cursor: pointer;
   border-radius: 0.4rem;
   white-space: nowrap;
@@ -200,15 +200,15 @@
 
 /* D — Ghost on dark backgrounds → subtle white fill */
 .btn-ghost-dark {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.72);
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.9);
   background-image: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.13) 50%,
+    rgba(255, 255, 255, 0.16) 50%,
     transparent               50%
   );
 }
-.btn-ghost-dark:hover { color: #fff; border-color: rgba(255,255,255,0.6); }
+.btn-ghost-dark:hover { color: #fff; border-color: rgba(255,255,255,0.75); }
 
 /* E — WhatsApp green → Navy fill */
 .btn-whatsapp {

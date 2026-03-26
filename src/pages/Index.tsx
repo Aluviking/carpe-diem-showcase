@@ -104,15 +104,15 @@ const Index = () => {
                   <button
                     key={opt.value}
                     onClick={() => setSortBy(opt.value)}
-                    className="font-body font-medium transition-all duration-200 active:scale-95 shrink-0"
+                    className="font-body font-semibold transition-all duration-200 active:scale-95 shrink-0"
                     style={{
-                      fontSize: '0.66rem',
-                      padding: '0.28rem 0.8rem',
+                      fontSize: '0.7rem',
+                      padding: '0.32rem 0.9rem',
                       borderRadius: '99px',
                       letterSpacing: '0.04em',
                       background: active ? NAVY : 'transparent',
-                      color:      active ? '#fff' : 'hsl(0 0% 48%)',
-                      border:     active ? `1.5px solid ${NAVY}` : '1.5px solid hsl(0 0% 82%)',
+                      color:      active ? '#fff' : 'hsl(0 0% 36%)',
+                      border:     active ? `1.5px solid ${NAVY}` : '1.5px solid hsl(0 0% 78%)',
                       whiteSpace: 'nowrap',
                     }}
                   >
@@ -125,7 +125,7 @@ const Index = () => {
 
           {/* Product grid */}
           {sorted.length > 0 ? (
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10 sm:gap-x-7 sm:gap-y-14 lg:gap-x-10 lg:gap-y-16">
+            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-12 md:gap-x-8 md:gap-y-14 lg:gap-x-10 lg:gap-y-16">
               {sorted.map((product, i) => (
                 <ProductCard
                   key={product.id}

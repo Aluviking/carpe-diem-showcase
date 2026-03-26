@@ -64,7 +64,7 @@ const HeroSection = () => {
         <h1
           className="font-display text-white animate-fade-in"
           style={{
-            fontSize: 'clamp(5.5rem, 14vw, 12rem)',
+            fontSize: 'clamp(3rem, 13vw, 12rem)',
             lineHeight: 0.86,
             letterSpacing: '-0.03em',
             fontWeight: 600,
@@ -94,7 +94,7 @@ const HeroSection = () => {
             fontSize: 'clamp(1rem, 1.9vw, 1.18rem)',
             fontWeight: 300,
             lineHeight: 1.72,
-            maxWidth: '370px',
+            maxWidth: 'min(370px, 85vw)',
             marginBottom: '3rem',
             animationDelay: '0.3s',
           }}
