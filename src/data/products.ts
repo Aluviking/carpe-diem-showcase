@@ -538,11 +538,11 @@ export const products: Product[] = [
     category: 'Lifestyle',
     price: 95000,
     description: 'Camiseta con tipografía artesanal bordada a mano. Algodón premium, edición especial de colección. Estilo que comunica.',
-    image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=750&fit=crop&sat=-30',
+    image: 'https://images.unsplash.com/photo-1562157873-818bc0726f68?w=600&h=750&fit=crop&q=80',
     images: [
-      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=750&fit=crop&sat=-30',
-      'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600&h=750&fit=crop',
-      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=750&fit=crop',
+      'https://images.unsplash.com/photo-1562157873-818bc0726f68?w=600&h=750&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600&h=750&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=750&fit=crop&q=80',
     ],
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     colors: [
@@ -562,11 +562,11 @@ export const products: Product[] = [
     category: 'Lifestyle',
     price: 160000,
     description: 'Hoodie heavyweight con bordado artesanal en el pecho. Algodón premium, fit oversize. Un básico de alto impacto visual.',
-    image: 'https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=600&h=750&fit=crop&hue=220',
+    image: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&h=750&fit=crop&q=80',
     images: [
-      'https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=600&h=750&fit=crop&hue=220',
-      'https://images.unsplash.com/photo-1578681994506-b8f463449011?w=600&h=750&fit=crop',
-      'https://images.unsplash.com/photo-1506634572416-48cdfe530110?w=600&h=750&fit=crop',
+      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&h=750&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1578681994506-b8f463449011?w=600&h=750&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=600&h=750&fit=crop&q=80',
     ],
     sizes: ['S', 'M', 'L', 'XL'],
     colors: [
@@ -585,11 +585,11 @@ export const products: Product[] = [
     category: 'Lifestyle',
     price: 65000,
     description: 'Gorra curved con bordado exclusivo en el frente. Ajuste velcro trasero. Diseño de colección, piezas limitadas.',
-    image: 'https://images.unsplash.com/photo-1588850561407-ed78c334e67a?w=600&h=750&fit=crop&hue=30',
+    image: 'https://images.unsplash.com/photo-1534215754734-18e55d13e346?w=600&h=750&fit=crop&q=80',
     images: [
-      'https://images.unsplash.com/photo-1588850561407-ed78c334e67a?w=600&h=750&fit=crop&hue=30',
-      'https://images.unsplash.com/photo-1534215754734-18e55d13e346?w=600&h=750&fit=crop',
-      'https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=600&h=750&fit=crop',
+      'https://images.unsplash.com/photo-1534215754734-18e55d13e346?w=600&h=750&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1588850561407-ed78c334e67a?w=600&h=750&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=600&h=750&fit=crop&q=80',
     ],
     sizes: ['Único'],
     colors: [
